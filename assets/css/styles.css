@@ -191,7 +191,7 @@ main {
   border-radius: 5px;
   font-size: 15px;
   font-weight: 500;
-
+  cursor: pointer;
 }
 .cards{
   display: flex;
@@ -290,6 +290,7 @@ label {
     border-radius: 10px;
     color: #ffff;
     font-size: 15px;
+    cursor: pointer;
 }
 form input[type="text"],
 form input[type="email"],
