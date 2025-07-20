@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&family=Ysabeau+SC:wght@1..1000&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #f4f4f4;
+  font-family: "Poppins";
+}
+.container h3{
+  font-family: "Permanent Marker", cursive;
+  font-size: 26px;
+  font-weight: 300;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+a {
+  text-decoration: none;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #4dbcf8, #1aa5f4, #4dbcf8, #f4f4f4);
+  height: auto;
+  width: 100%;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: top 0.3s;
+}
+
+header.hidden {
+  top: -100px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  color: #fff;
+  align-items: center;
+  height: 100px;
+}
+nav a {
+  color: #fff;
+  font-size: 14px;
+}
+.logo {
+  font-family: "Satisfy", cursive;
+  font-size: 36px;
+}
+.banner ,
+
+main,
+.projects,
+.about-us{
+  margin-bottom: 100px;
+}
+.banner{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px
+}
+.text-banner{
+  width: 100%;
+}
+.text-banner-1{
+  display: flex;
+
+  width: 100%;
+  margin: 0 auto;
+}
+.text-banner-1 h2, .text-banner-1 p{
+  margin: 0; 
+  height: auto;
+  background-image: linear-gradient(180deg,#a4cfe0, #03a5dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: black;
+
+}
+.text-banner-1 h2{
+  width: 70%;
+  font-size: 10vw;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: "Ysabeau SC", sans-serif;
+  text-align: center;
+  line-height: 1;
+}
+.text-banner-1 p{
+  font-size: 2.7vw;
+  color: #444;
+  font-family: "Satisfy", cursive;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.text-banner-1 span{
+  line-height: 1.5;
+}
+.text-banner-1 .upper{
+  text-transform: uppercase;
+  font-family: "Poppins";
+}
+.text-down{
+  text-align: center;
+  font-size: 2vw;
+}
+
+
+.water-value{
+    padding-bottom: 50px;
+    text-align: center;
+}
+main {
+  display: flex;
+  max-height: 47.78%;
+  gap: 20px;
+}
+.text-main {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  flex: 1;
+  padding: 30px;
+}
+.text-main h3 {
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.26vw;
+  padding: 30px 0;
+  color: #44afb4;
+}
+.text-main p {
+  line-height: 2;
+  width: 100%;
+  font-size: 0.8vw;
+}
+.main-images{
+  flex: 2;
+  background-image: url("../img/banner-3png.png");
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.image-main {
+  height: 100%;
+  max-width: 50%;
+  border: 6px solid #fff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.text-projects{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #999999;
+  width: 70%;
+  margin: 0 auto;
+  gap: 50px;
+  font-size: 14px;
+}
+.text-projects h3{
+  color: #44afb4;
+}
+.text-projects p{
+}
+.doar span{
+  padding: 10px;
+}
+.doar button{
+  background-color: #053235;
+  color: #fff;
+  padding: 10px;
+  border: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 500;
+
+}
+.cards{
+  display: flex;
+  gap: 70px;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+.card{
+  max-width: 380px;
+}
+.card h4, .card p,.card a{
+  padding: 5px 0;
+}
+.card img{
+  width: 100%;
+}
+.card p{
+  width: 100%;
+  font-size: 14px;
+}
+.card a{
+  color: #03a5dc;
+  font-size: 15px;
+}
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.about-us h3 {
+  padding-bottom: 50px;
+}
+.about-contact {
+  display: flex;
+  background-color: #fff;
+  width: 90%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+.contact,
+.about {
+  flex: 1;
+}
+.about {
+  background: linear-gradient(180deg, #4dbcf8, #1aa5f4, #0d5ce2);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2vh;
+  color: #fff;
+}
+.about h4, .contact h4 {
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 30px 0;
+    text-align: center;
+    font-family: "Satisfy", cursive;
+}
+.about p {
+    line-height: 3;
+    width: 100%;
+    font-size:  0.8vw;
+}
+.contact h4{
+  color: #0d5ce2;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+.contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+label {
+    font-size: 14px;
+}
+.form input[type="submit"] {
+    background: linear-gradient(180deg, #1aa5f4, #0d5ce2);
+    border: 0px;
+    border-radius: 10px;
+    color: #ffff;
+    font-size: 15px;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="submit"] {
+    width: 70%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ecf0f1;
+    outline: none;
+    margin: 20px 0;
+}
+textarea {
+  resize: none;
+  width: 70%;
+  background-color: #ecf0f1;
+  border: none;
+  outline: none;
+  min-height: 200px;
+}
+
+footer {
+  background: linear-gradient(180deg, #4dbcf8, #1aa5f4, #0d5ce2);
+  margin-top: auto;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+footer a {
+  color: #fff;
+  padding: 20px;
+  font-size: 16px;
+}
+footer i{
+  padding-right: 10px;
+}
+
+.logo-footer {
+  color: #fff;
+}
+
+@media screen and (max-width: 1100px){
+  .about p{
+    font-size: 0.9vw;
+  }
+}
+@media screen and (max-width: 800px){
+  header{
+    position: static;
+  }
+  nav a{
+    display: none;
+  }
+  .logo{
+    display: flex;
+  }
+  .banner{
+    margin-top: 0;
+  }
+  main{
+    flex-direction: column;
+  }
+  .text-main{
+    width: 100%;
+    padding-top: 0;
+  }
+  .text-main h3{
+    padding-top: 0;
+    font-size: 18px;
+  }
+  .text-main p{
+    font-size: 13px;
+  }
+  .doar{
+    text-align: center;
+  }
+  .about p{
+    font-size: 13px;
+  }
+  .about-contact{
+    flex-direction: column;
+
+  }
+  .about-contact h4{
+    font-size: 20px;
+  }
+}
