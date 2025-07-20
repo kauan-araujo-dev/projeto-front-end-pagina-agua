@@ -5,12 +5,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html{
   scroll-behavior: smooth;
 }
 body {
   background-color: #f4f4f4;
   font-family: "Poppins";
+}
+a:hover{
+  opacity: 0.9;
 }
 .container h3{
   font-family: "Permanent Marker", cursive;
@@ -193,6 +197,9 @@ main {
   font-weight: 500;
   cursor: pointer;
 }
+.doar button:hover{
+  opacity: 0.9;
+}
 .cards{
   display: flex;
   gap: 70px;
@@ -291,6 +298,9 @@ label {
     color: #ffff;
     font-size: 15px;
     cursor: pointer;
+}
+.form input[type="submit"]:hover{
+  opacity: 0.9;
 }
 form input[type="text"],
 form input[type="email"],
